@@ -2,8 +2,4 @@
     height:100%;
     display: grid;
     grid-template-rows: 60px auto min-content;
-    grid-template-areas:
-        "header"
-        "main-content"
-        "footer";
 }

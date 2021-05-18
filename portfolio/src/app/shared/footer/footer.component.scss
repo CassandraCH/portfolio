@@ -1,0 +1,29 @@
+/*************************************** FOOTER ***************************************/
+footer {
+    width: 100%;
+    grid-area: footer;
+    grid-row: 3;
+    background-color:#1A3C55;
+    bottom: 0;
+    padding: 10px;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    color: #E1E7E9;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#footer-content-logos { margin-left: 10px; }
+
+#footer-content-logos a:hover { opacity: 0.7; }
+
+/******* Version mobile *******/
+@media (max-width: 480px) {
+   footer { height: 65px; }
+
+   #footer-content { flex-direction: column; }
+}
