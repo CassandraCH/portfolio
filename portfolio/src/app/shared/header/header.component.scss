@@ -1,0 +1,31 @@
+header {
+    background-color: #1A3C55;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    transition: 0.8s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo-box {
+  border: 1px solid red;
+  margin-left: 5%;
+}
+
+#navbar-box {
+  border: 1px solid green;
+  width: 100%;
+  // margin-right: 5%;
+}
+
+#logo {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 600;
+    color: #E1E7E9;
+}
+
+#logo:hover{ color: #AEDED6; }
