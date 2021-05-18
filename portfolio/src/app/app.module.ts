@@ -21,6 +21,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ProjectsItemComponent } from './projects/projects-item/projects-item.component';
 
 import { ContactComponent } from './contact/contact.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ContactComponent } from './contact/contact.component';
     SkillsItemComponent,
     ProjectsComponent,
     ProjectsItemComponent,
-    ContactComponent
+    ContactComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
