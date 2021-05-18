@@ -89,6 +89,7 @@ nav, .menu {
 
     .menu li { opacity: 0; }
 
+    /* Affichage un à un des items du menu */
     .menu li:nth-child(1) { transition: all 1.2s ease 0.2s; }
 
     .menu li:nth-child(2) { transition: all 1.2s ease 0.4s; }
