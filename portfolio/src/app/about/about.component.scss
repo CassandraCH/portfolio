@@ -1,0 +1,33 @@
+#about-content {
+  grid-area: main-content;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+#photo {
+  width: 350px;
+  border-radius: 50%;
+}
+
+#about-description { width: 700px; }
+
+#about-text p {
+  color: #AEDED6;
+  padding-bottom: 10px;
+}
+
+@media(max-width:1100px) {
+  #photo { width: 250px; }
+  #about-description { width: 480px; }
+}
+
+/******* Version mobile *******/
+@media only screen and (max-width: 768px) {
+  #photo{ display: none; }
+  #about-description { width: 90%; }
+}
