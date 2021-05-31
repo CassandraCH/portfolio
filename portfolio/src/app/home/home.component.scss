@@ -1,0 +1,40 @@
+#home-content {
+  width: 100%;
+  grid-area: main-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+#home-title {
+  color: #45C69E;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+#home-description {
+  color: #AEDED6;
+  font-size: 28px;
+  width: 450px;
+}
+
+#home-illustration { width: 680px; }
+
+/******* Version tablette *******/
+@media(max-width:1100px) {
+  #home-content { flex-direction: column; }
+}
+
+/******* Version mobile *******/
+@media only screen and (max-width: 768px) {
+  #home-illustration { width: 250px; }
+  #home-title { font-size: 28px;}
+  #home-description {
+    font-size: 25px;
+    width: 270px;
+  }
+}
