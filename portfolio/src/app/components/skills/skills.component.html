@@ -1,1 +1,7 @@
-<app-skills-box></app-skills-box>
+<div id="skills-content">
+  <h1>Mes compétences</h1>
+  <app-skills-box *ngFor="let skill of skills; let i = index"
+                  [name]="skill.name"
+                  [list]="skill.list"
+  ></app-skills-box>
+</div>

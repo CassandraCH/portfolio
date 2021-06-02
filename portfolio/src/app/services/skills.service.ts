@@ -37,7 +37,7 @@ export class SkillsService {
       name: "Outils",
       list: [
         { name: "Git", logo: "../assets/logos/logo_git.png" },
-        { name: "Github", logo: "../assets/logos/logo_github.png" },
+        { name: "Github", logo: "../assets/logos/logo_github_noir.png" },
         { name:  "VSCode", logo: "../assets/logos/logo_vscode.png" },
         { name:  "IntelliJ", logo: "../assets/logos/logo_intellij.png" },
         { name:  "UML", logo: "../assets/logos/logo_uml.png" }
