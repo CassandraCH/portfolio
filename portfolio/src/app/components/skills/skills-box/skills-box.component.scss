@@ -1,1 +1,55 @@
-div { background-color: #E1E7E9; }
+div {
+  background-color: #E1E7E9;
+}
+
+.skills-list-one-row {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  column-gap: 70px;
+  height: 70%;
+}
+
+.skills-list-two-rows {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  column-gap: 70px;
+  grid-template-rows: repeat(3, 80px);
+  row-gap: 20px;
+}
+
+/******* Version tablette *******/
+@media(max-width:1100px) {
+  .skills-list-one-row {
+    grid-template-rows: repeat(3, 80px);
+    row-gap: 20px;
+    grid-template-columns: none;
+    height: 70%;
+  }
+
+  .skills-list-two-rows {
+    grid-template-columns: repeat(2, 80px);
+    column-gap: 70px;
+    grid-template-rows: repeat(3, 80px);
+    row-gap: 20px;
+  }
+}
+
+/******* Version petit mobile *******/
+@media only screen and (max-width: 580px) {
+  .skills-list-one-row {
+    grid-template-rows: repeat(3, 80px);
+    row-gap: 20px;
+    grid-template-columns: none;
+    height: 70%;
+  }
+
+  .skills-list-two-rows {
+    grid-template-columns: repeat(2, 80px);
+    column-gap: 70px;
+    grid-template-rows: repeat(3, 80px);
+    row-gap: 20px;
+  }
+}

@@ -1,5 +1,7 @@
 <div>
   <h2>{{name}}</h2>
-  <app-skills-item *ngFor="let el of list"
-                   [item]="el"></app-skills-item>
+  <div class="skills-list skills-list-one-row" [ngClass]="{ 'skills-list-two-rows': isSup }">
+    <app-skills-item *ngFor="let elem of list"
+                    [item]="elem"></app-skills-item>
+  </div>
 </div>
