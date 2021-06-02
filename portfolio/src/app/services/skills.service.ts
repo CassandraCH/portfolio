@@ -6,6 +6,7 @@ import {Skill} from "../models/skill.models";
 })
 export class SkillsService {
 
+  // ensemble des compétences triées par domaine
   private skills: {id: number, name: string, list: Skill[]}[] = [
     {
       id: 1,
@@ -45,13 +46,6 @@ export class SkillsService {
     }
   ];
 
-  constructor() { }
-
-  getSkills() {
-    return this.skills;
-  }
-
-  getSkillById(id: number) {
-    return this.skills.find( (s) => s.id === id);
-  }
+  // permet de récupérer la liste des compétences
+  getSkills() { return this.skills; }
 }

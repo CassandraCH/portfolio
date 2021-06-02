@@ -1,7 +1,11 @@
-<div>
+<div class="skills-box">
+
   <h2>{{name}}</h2>
+
+  <!--  par défaut => application de la classe css pour une seule ligne-->
   <div class="skills-list skills-list-one-row" [ngClass]="{ 'skills-list-two-rows': isSup }">
     <app-skills-item *ngFor="let elem of list"
                     [item]="elem"></app-skills-item>
   </div>
+
 </div>

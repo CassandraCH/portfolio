@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Skill} from "../../../models/skill.models";
 
 @Component({
@@ -6,12 +6,7 @@ import {Skill} from "../../../models/skill.models";
   templateUrl: './skills-item.component.html',
   styleUrls: ['./skills-item.component.scss']
 })
-export class SkillsItemComponent implements OnInit {
-
+export class SkillsItemComponent {
+  // importation de l'item depuis le composant parent (skills-box)
   @Input() item: Skill;
-
-  constructor() { }
-
-  ngOnInit(): void { }
-
 }

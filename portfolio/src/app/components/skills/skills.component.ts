@@ -12,8 +12,6 @@ export class SkillsComponent implements OnInit {
 
   constructor(private skillsService: SkillsService) { }
 
-  ngOnInit(): void {
-    this.skills = this.skillsService.getSkills();
-  }
-
+  // récupération des compétences via le service où stockées les données
+  ngOnInit(): void { this.skills = this.skillsService.getSkills(); }
 }
