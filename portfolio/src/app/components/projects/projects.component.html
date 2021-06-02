@@ -2,11 +2,32 @@
   <h1>Mes projets</h1>
 
   <div id="projects-slide">
-    <!-- BOUTON "PRECEDENT"-->
-    <a id="prev" onclick="incrementer(-1)">
-      <img src="assets/projets/precedent.png" alt="bouton flèche gauche / précédent">
-    </a>
+      <!-- IMAGES DES PROJETS -->
+      <ng-container *ngFor="let item of slides; let i = index">
+        <app-projects-item class="component" *ngIf="i === currentSlide" [project]="item">
+        </app-projects-item>
+      </ng-container>
+      <!-- FIN IMAGES DES PROJETS -->
+      <!-- POINTS EN BAS -->
+      <div class="projects-dots">
+        <span  class="dot"
+               [ngClass]="{'active': currentSlide === i}"
+               *ngFor="let num of numbers; let i = index"></span>
+      </div>
+
+      <!--   controls -->
+      <!-- BOUTON "PRECEDENT"-->
+      <a class="control" id="prev" (click)="onPrevClick()">
+        <img src="assets/projets/precedent.png" alt="bouton flèche gauche / précédent">
+      </a>
+      <!-- BOUTON "SUIVANT" -->
+      <a class="control" id="next" (click)="onNextClick()">
+        <img src="assets/projets/suivant.png" alt="bouton flèche droite / suivant">
+      </a>
 
 
+
+    <!-- DESCRIPTIONS DES PROJETS -->
+
+    <!-- FIN DESCRIPTIONS DES PROJETS -->
   </div>
-</div>
