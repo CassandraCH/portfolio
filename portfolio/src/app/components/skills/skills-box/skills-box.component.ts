@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {Skill} from "../../../models/skill.models";
 import {SkillsService} from "../../../services/skills.service";
 
 @Component({
@@ -8,12 +7,13 @@ import {SkillsService} from "../../../services/skills.service";
   styleUrls: ['./skills-box.component.scss']
 })
 export class SkillsBoxComponent implements OnInit {
-  title: string = '';
-  skills: Skill[] = [];
+  skills: any[];
 
-  constructor(private skillsService: SkillsService) { }
+   constructor(private skillsService: SkillsService) { }
 
   ngOnInit(): void {
+     this.skills = this.skillsService.getSkills();
+     console.log("skills OK");
+     console.log(this.skills);
   }
-
 }

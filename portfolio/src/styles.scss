@@ -1,0 +1,35 @@
+/* Imports des polices */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+html, body {
+  background-color: #102534;
+  height: 100%;
+}
+
+
+/*************************************** COMMUN A PLUSIEURS PAGES ***************************************/
+h1 {
+  color: #45C69E;
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: #102534;
+  font-size: 24px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 10px 0;
+}
