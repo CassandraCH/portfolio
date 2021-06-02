@@ -45,8 +45,7 @@ export class SkillsService {
     }
   ];
 
-  constructor() {
-  }
+  constructor() { }
 
   getSkills() {
     return this.skills;

@@ -15,6 +15,5 @@ export class SkillsBoxComponent implements OnInit {
      this.list = [];
    }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 }

@@ -7,11 +7,11 @@ import {Skill} from "../../../models/skill.models";
   styleUrls: ['./skills-item.component.scss']
 })
 export class SkillsItemComponent implements OnInit {
+
   @Input() item: Skill;
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void { }
 
 }
