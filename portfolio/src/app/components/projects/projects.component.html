@@ -7,15 +7,16 @@
         <app-projects-item class="component" *ngIf="i === currentSlide" [project]="item">
         </app-projects-item>
       </ng-container>
-      <!-- FIN IMAGES DES PROJETS -->
+
       <!-- POINTS EN BAS -->
       <div class="projects-dots">
         <span  class="dot"
                [ngClass]="{'active': currentSlide === i}"
-               *ngFor="let num of numbers; let i = index"></span>
+               *ngFor="let num of numbers; let i = index"
+                (click)="onIndexClick(i)"></span>
       </div>
 
-      <!--   controls -->
+      <!-- CONTROLS -->
       <!-- BOUTON "PRECEDENT"-->
       <a class="control" id="prev" (click)="onPrevClick()">
         <img src="assets/projets/precedent.png" alt="bouton flèche gauche / précédent">
@@ -25,6 +26,6 @@
         <img src="assets/projets/suivant.png" alt="bouton flèche droite / suivant">
       </a>
 
-
   </div>
+
 </div>
