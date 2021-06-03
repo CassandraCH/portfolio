@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input} from '@angular/core';
 import {Project} from "../../../models/project.models";
 
 @Component({
@@ -6,14 +6,6 @@ import {Project} from "../../../models/project.models";
   templateUrl: './projects-item.component.html',
   styleUrls: ['./projects-item.component.scss']
 })
-export class ProjectsItemComponent implements OnInit {
+export class ProjectsItemComponent {
   @Input() project: Project;
-
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-
 }

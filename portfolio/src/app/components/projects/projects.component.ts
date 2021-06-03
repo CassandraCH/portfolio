@@ -9,19 +9,16 @@ import {Project} from "../../models/project.models";
 })
 export class ProjectsComponent implements OnInit {
 
-  private slides: Project[];
+  slides: Project[];
+  currentSlide = 0;
+  numbers: number[];
 
   constructor(private projectsService: ProjectsService) {
     this.numbers = Array(this.slides.length).fill(0).map((x, i) =>i);
   }
 
-  currentSlide = 0;
-  numbers: number[];
-
-
-  ngOnInit(): void {
-    this.slides = this.projectsService.getProjects();
-  }
+  // récupération des projets via le service
+  ngOnInit(): void { this.slides = this.projectsService.getProjects(); }
 
   onPrevClick() {
     const previous = this.currentSlide - 1;
