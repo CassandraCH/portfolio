@@ -33,7 +33,7 @@ export class ProjectsService {
     },
     {
       image: 'assets/projets/portfolio-v1.png',
-      name: 'Première version du Portfolio',
+      name: 'Portfolio 1.0',
       type: 'Projet Personnel',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
       technologies: ['HTML5', 'CSS3', 'JavaScript'],

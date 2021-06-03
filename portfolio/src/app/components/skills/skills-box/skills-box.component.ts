@@ -4,7 +4,7 @@ import {Skill} from "../../../models/skill.models";
 @Component({
   selector: 'app-skills-box',
   templateUrl: './skills-box.component.html',
-  styleUrls: ['./skills-box.component.scss']
+  styleUrls: ['./skills-box.component.css']
 })
 export class SkillsBoxComponent implements OnInit {
   // importation du nom du domaine de compétences et la liste de compétences correspondante depuis le component parent (skills)
