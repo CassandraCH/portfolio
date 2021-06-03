@@ -3,7 +3,6 @@ export interface Project {
   name: string;
   type: string;
   informations: string;
-  technologies: string;
-  //technologies: string[];
+  technologies: string[];
   link: string;
 }

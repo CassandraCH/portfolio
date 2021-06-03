@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ProjectsService} from "../../services/projects.service";
 import {Project} from "../../models/project.models";
 
 @Component({
@@ -8,35 +9,9 @@ import {Project} from "../../models/project.models";
 })
 export class ProjectsComponent implements OnInit {
 
-  public slides: Project[] = [
-    {
-      image: 'assets/projets/projet.png',
-      name: 'NOM DU PROJET 1',
-      type: 'Projet Scolaire',
-      informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
-      technologies: 'Angular | Node.js | Express | MongoDB',
-      link: 'https://github.com/CassandraCH'
-    },
-    {
-      image: 'assets/projets/projet.png',
-      name: 'NOM DU PROJET 2',
-      type: 'Projet Scolaire',
-      informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
-      technologies: 'Angular | Node.js | Express | MongoDB',
-      link: 'https://github.com/CassandraCH'
-    },
-    {
-      image: 'assets/projets/projet.png',
-      name: 'NOM DU PROJET 3',
-      type: 'Projet Scolaire',
-      informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
-      technologies: 'Angular | Node.js | Express | MongoDB',
-      link: 'https://github.com/CassandraCH'
-    },
-  ]
+  private slides: Project[];
 
-  constructor() {
-
+  constructor(private projectsService: ProjectsService) {
     this.numbers = Array(this.slides.length).fill(0).map((x, i) =>i);
   }
 
@@ -45,6 +20,7 @@ export class ProjectsComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.slides = this.projectsService.getProjects();
   }
 
   onPrevClick() {
