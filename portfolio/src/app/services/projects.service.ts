@@ -8,7 +8,7 @@ export class ProjectsService {
 
   private projects: Project[] = [
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/cooking-chief.png',
       name: 'Cooking Chief',
       type: 'Projet Scolaire',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -16,7 +16,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/Cooking-Chief'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/nurikabe.png',
       name: 'Nurikabe',
       type: 'Projet Scolaire',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -24,7 +24,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/Nurikabe'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/jeu-de-la-vie.png',
       name: 'Jeu de la vie',
       type: 'Projet Scolaire',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -32,7 +32,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/jeu-de-la-vie'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/portfolio-v1.png',
       name: 'Première version du Portfolio',
       type: 'Projet Personnel',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -40,7 +40,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/portfolio-v1'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/appli-chat.png',
       name: 'Application de Chat',
       type: 'Projet Scolaire',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -48,7 +48,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/application-chat'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/site-cuisine.png',
       name: 'Site de cuisine',
       type: 'Projet Personnel',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
@@ -56,7 +56,7 @@ export class ProjectsService {
       link: 'https://github.com/CassandraCH/Projet-site-cuisine'
     },
     {
-      image: 'assets/projets/projet.png',
+      image: 'assets/projets/beauty-savior.png',
       name: 'Beauty Savior',
       type: 'Projet Scolaire',
       informations: 'In purus est, mattis eget, imperdiet nec, fermentum congue, tortor. Aenean ut nibh. Nullam hendrerit viverra dolor. Vestibulum fringilla, lectus id viverra malesuada, enim mi adipiscing ligula, et bibendum lacus lectus id sem. ',
