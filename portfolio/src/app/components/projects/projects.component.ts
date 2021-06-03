@@ -9,7 +9,7 @@ import {Project} from "../../models/project.models";
 })
 export class ProjectsComponent implements OnInit {
 
-  slides: Project[];
+  slides: Project[] = this.projectsService.getProjects();
   currentSlide = 0;
   numbers: number[];
 
@@ -18,7 +18,7 @@ export class ProjectsComponent implements OnInit {
   }
 
   // récupération des projets via le service
-  ngOnInit(): void { this.slides = this.projectsService.getProjects(); }
+  ngOnInit(): void { }
 
   onPrevClick() {
     const previous = this.currentSlide - 1;

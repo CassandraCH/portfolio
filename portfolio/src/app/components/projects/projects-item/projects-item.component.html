@@ -6,7 +6,7 @@
     <h2 class="projects-name"> {{ project.name }}</h2>
     <h3 class="projects-type">{{ project.type }}</h3>
     <p class="projects-informations"> {{ project.informations }}</p>
-    <p class="projects-technologies">{{ project.technologies}}</p>
+    <p class="projects-technologies">{{ project.technologies.join(" | ")}}</p>
     <div class="projects-link">
       <a href="{{ project.link }}">Voir le code source</a>
     </div>
