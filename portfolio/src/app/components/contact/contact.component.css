@@ -1,0 +1,72 @@
+#contact-content {
+  grid-area: main-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#contact-accroche {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #AEDED6;
+}
+
+.contact-boxes {
+  width: 100%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.contact-box p, h3 { color: #E1E7E9; }
+
+.contact-box h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+#mail-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+#btn-download-cv {
+  background-color: #3B88C0;
+  border-radius: 8px;
+  width: fit-content;
+  padding: 12px 20px;
+}
+
+#btn-download-cv a {
+  text-decoration: none;
+  color: #102534;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#logos-social-medias a { text-decoration: none; }
+
+/******* Version tablette *******/
+@media(max-width:1100px) {
+  .contact-boxes {
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+  }
+
+  .contact-box { gap: 10px;}
+}
