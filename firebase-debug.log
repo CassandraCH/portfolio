@@ -1,0 +1,62 @@
+[debug] [2021-06-07T13:45:08.445Z] ----------------------------------------------------------------------
+[debug] [2021-06-07T13:45:08.448Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cassa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init database
+[debug] [2021-06-07T13:45:08.448Z] CLI Version:   9.12.1
+[debug] [2021-06-07T13:45:08.448Z] Platform:      win32
+[debug] [2021-06-07T13:45:08.448Z] Node Version:  v14.15.4
+[debug] [2021-06-07T13:45:08.450Z] Time:          Mon Jun 07 2021 15:45:08 GMT+0200 (heure d’été d’Europe centrale)
+[debug] [2021-06-07T13:45:08.450Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-07T13:45:08.460Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-07T13:45:08.460Z] > authorizing via signed-in user (cassandra721d@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\cassa\Documents\GitHub\cassandrach.github.io\portfolio
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using portfolio-9736f. 
+[debug] [2021-06-07T13:45:12.677Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f [none]
+[debug] [2021-06-07T13:45:24.006Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f 200
+[debug] [2021-06-07T13:45:24.007Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f {"projectId":"portfolio-9736f","projectNumber":"824353717130","displayName":"portfolio","name":"projects/portfolio-9736f","resources":{"hostingSite":"portfolio-9736f","storageBucket":"portfolio-9736f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-06-07T13:45:24.011Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-07T13:45:24.012Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-07T13:45:28.035Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 07 Jun 2021 13:45:30 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-07T13:45:28.055Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-9736f/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-06-07T13:45:31.721Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Jun 2021 13:45:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-06-07T13:45:31.722Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/portfolio-9736f/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-06-07T13:45:34.307Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Jun 2021 13:45:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-07T13:45:44.319Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-9736f/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-06-07T13:45:46.381Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 07 Jun 2021 13:45:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-06-07T13:45:46.387Z] > refreshing access token with scopes: []
+[debug] [2021-06-07T13:45:46.387Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-07T13:45:48.317Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 07 Jun 2021 13:45:51 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-07T13:45:48.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f [none]
+[debug] [2021-06-07T13:45:50.271Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f 200
+[debug] [2021-06-07T13:45:50.271Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-9736f {"projectId":"portfolio-9736f","projectNumber":"824353717130","displayName":"portfolio","name":"projects/portfolio-9736f","resources":{"hostingSite":"portfolio-9736f","storageBucket":"portfolio-9736f.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
